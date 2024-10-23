@@ -143,9 +143,9 @@
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
                     <li>
                       <div class="author-info flex items-center !p-1">
-                        <div class="image">
+                        {{-- <div class="image">
                           <img src="assets/images/profile/profile-image.png" alt="image">
-                        </div>
+                        </div> --}}
                         <div class="content">
                           <h4 class="text-sm">{{ auth()->user()->name }}</h4>
                           <a class="text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white text-xs" href="#">{{ auth()->user()->email }}</a>

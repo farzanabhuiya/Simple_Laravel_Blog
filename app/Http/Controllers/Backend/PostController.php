@@ -31,7 +31,8 @@ class PostController extends Controller
               'title' =>"required",
               'content' =>"required"
             ]);
-
+         
+            $fileName = null; 
         if ($request->hasFile('image')) {
             $fileName = time() . '.' . $request->image->extension();
             $request->image->storeAs('post', $fileName, 'public');
