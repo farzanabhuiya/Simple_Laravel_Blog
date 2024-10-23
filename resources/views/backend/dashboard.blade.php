@@ -17,7 +17,7 @@
             <div class="row align-items-center">
               <div class="col-md-6">
                 <div class="title">
-                  <h2>Blog Dashboard</h2>
+                  <h2 class="align-items-center"> Simple Laravel Blog Dashboard</h2>
                 </div>
               </div>
              

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
     <title>Laravel Blog</title>
 
     <!-- ========== All CSS files linkup ========= -->
@@ -28,7 +27,6 @@
     <aside class="sidebar-nav-wrapper">
       <div class="navbar-logo">
         <a href="index.html">
-          {{-- <img src="{{ asset('backend/assets/images/logo/logo.svg') }}" alt="logo" /> --}}
           <h3>Laravel Blog</h3>
         </a>
       </div>
@@ -36,12 +34,7 @@
         <ul>
           <li class="nav-item nav-item-has-children">
           <a
-              href="#0"
-              data-bs-toggle="collapse"
-              data-bs-target="#ddmenu_1"
-              aria-controls="ddmenu_1"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+            href="{{route('backend.dashboard')}}"
             >
             <span class="icon">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -51,14 +44,12 @@
                     d="M17.0833 10C17.7737 10 18.3432 9.43708 18.2408 8.75433C17.7005 5.14918 14.8508 2.29947 11.2457 1.75912C10.5629 1.6568 10 2.2263 10 2.91665V9.16666C10 9.62691 10.3731 10 10.8333 10H17.0833Z" />
                 </svg>
               </span>
-              <span class="text">Dashboard</span>
-            </a>
-            <ul id="ddmenu_1" class="collapse show dropdown-nav">
-              
-            </ul>
+              <span href="{{route('backend.dashboard')}}" class="text">Dashboard</span></a>
+            
+            
           </li>
           
-								{{-- @role('admin') --}}
+							
 
 
           <li class="nav-item nav-item-has-children">
@@ -92,7 +83,7 @@
           
        
 
-            {{-- @endrole --}}
+          
 
 
     

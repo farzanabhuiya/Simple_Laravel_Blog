@@ -38,10 +38,10 @@
                     </div>
 
                     <div class="my-3">
-                        <textarea value="{{$post->content}}" name="content"  id="editor" placeholder="Content Goes Here...."></textarea>
-                       
+                        <textarea name="content"  id="editor" placeholder="Content Goes Here....">{{$post->content}}</textarea>
+                        
                        </div>
-                                      
+                    
                 </div>
             </div>							
         </div>

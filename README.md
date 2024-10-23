@@ -64,3 +64,36 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+
+
+
+
+
+## Simple Laravel Blog
+
+## Deliverables:
+## Full Project:
+
+Migrations: Migration files are required to create database tables and define relationships.
+Controllers: Controller files, which contain data handling, request processing, and business logic.
+Models: Model file for each table, where data handling will be done through ORM.
+Views: View files created using the Blade template, where the front-end design and data will be displayed.
+
+
+## The README file will provide a step-by-step guide on how to run the project. For example:
+Dependencies must be installed via composer install.
+.env file to set up.
+Create the table by running the migration: php artisan migrate
+To run the project: php artisan serve and npm run dev.
+
+
+
+## (problems and solutions):
+A part of the README file will describe your approach and how you solved any problems you encountered.
+In this project, we used MVC architecture, where the model, view, and controller are created separately. Laravel's migration feature is used for database migration and relationship creation. A separate model is created for each table and data processing is done through the controller.
+
+Problems and solutions:
+I faced some problems while running the project, such as foreign key constraints in table relationships were having problems. To resolve this the table creation sequence had to be confirmed correctly. Also, there were some styling challenges with the Blade template, which have been determined using Bootstrap.

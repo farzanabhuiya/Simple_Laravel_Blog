@@ -58,12 +58,11 @@ class PostController extends Controller
     
 
     public function update(Request $request, $id){
-
         $post=Post::find($id);
-        $post->title = $request->title;
         $post->user_id=Auth::id();
-        $post->slug=$this->generateslug($request->title,Post::class);
-        $post->content = $request->content;
+        $post->title = $request->title;
+        $post->slug=$this->generateslug($request->title,Post::class); 
+        $post->content= $request->content;
         $post->save();
         return back()->with('success','Post Upadte successfully!');
 
@@ -73,4 +72,13 @@ class PostController extends Controller
         Post::find($id)->delete();
         return back()->with('success','Post Deleted successfully!');
     }
+
+
+            //  ReadMore
+    public function getFullContent($id){
+    $post = Post::findOrFail($id);
+    return response()->json(['content' => $post->content]);
+}
+
+
 }

@@ -17,7 +17,9 @@ Auth::routes();
                    //dashboard route
  Route::middleware('auth')->get('/dashboard', [DashboardController::class, 'dashboard'])->name('backend.dashboard');
                   
-                  
+                    //   ReadMore Route
+  Route::get('/posts/{id}/full-content', [PostController::class, 'getFullContent']);
+              
                      ///post route
  Route::middleware('auth')->prefix('/backend/post')->controller(PostController::class)->name('Post.')->group(
                           function(){
@@ -26,9 +28,15 @@ Auth::routes();
                               Route::post('/story' ,'story')->name('story');
                               Route::get('/edit/{id}','edit')->name('edit');
                               Route::put('/update/{id}','update')->name('update');
-                              Route::delete('/delete/{id}','delete')->name('delete');
-                              
-                      
+                              Route::delete('/delete/{id}','delete')->name('delete');        
                       
                           }
                       );
+
+
+ 
+
+
+
+
+
