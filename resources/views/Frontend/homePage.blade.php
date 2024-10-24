@@ -30,10 +30,12 @@
           </div>
         </div>
 
-        @endforeach			
+        @endforeach		
+        {{-- paginate --}}
+        {{$posts->links()}}	
       </div>
 
-
+     
 
 
       @push('content')
